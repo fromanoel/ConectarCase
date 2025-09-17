@@ -1,8 +1,10 @@
 import "../styles/home.css"
 import HomeSection from "../components/HomeSection.js"
+import RouteNav from "../components/RouteNav.js"
 const Home = () => {
   return (
     <>
+      <RouteNav />
       <div className="home-container">
         <div className="home-headline">
           <h1 className="home-title">
