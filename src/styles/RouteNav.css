@@ -39,3 +39,7 @@
 body[data-theme="dark"] .route-link {
   color: #fff;
 }
+
+[data-theme="dark"] .route-link:hover {
+  background-color: #27ae60;
+}

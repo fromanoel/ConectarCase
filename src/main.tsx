@@ -18,8 +18,8 @@ createRoot(document.getElementById("root")!).render(
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/table" element={<Table />} />
           <Route path="/chart" element={<Chart />} />
+          <Route path="/table" element={<Table />} />
         </Routes>
       </main>
       <Footer />

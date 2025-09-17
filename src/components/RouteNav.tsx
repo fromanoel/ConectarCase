@@ -3,8 +3,8 @@ import "../styles/RouteNav.css"
 const RouteNav = () => {
   const { pathname } = useLocation()
   const routes = [
-    { path: "/table", label: "Tabela" },
-    { path: "/chart", label: "Gráfico" },
+    { path: "/chart", label: "Gráfico PIB" },
+    { path: "/table", label: "Tabela PIB" },
   ]
 
   if (pathname === "/") {

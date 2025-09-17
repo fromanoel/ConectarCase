@@ -13,8 +13,8 @@ const Home = () => {
           <h1 className="home-title">
             Transforme dados em conhecimento:
             <span className="home-subtitle">
-              visualize a evolução do PIB brasileiro de forma simples e
-              interativa.
+              visualize a <strong>evolução</strong> do{" "}
+              <strong>PIB brasileiro</strong> de forma simples e interativa.
             </span>
           </h1>
         </div>
@@ -23,14 +23,15 @@ const Home = () => {
             <HomeCard
               bgImage={imgChart}
               mainTitle="Gráfico de evolução do PIB"
-              mainText="Gráfico linear que exibe a evolução do PIB brasileiro e PIB per capta em dólares."
+              mainText="Visualize a evolução do PIB brasileiro (total e per capita, em dólares) ao longo dos anos em um gráfico de linha interativo.
+"
             />
           </Link>
           <Link to="/table" className="route-link">
             <HomeCard
               bgImage={imgTable}
               mainTitle="Tabela do PIB por ano"
-              mainText="Tabela que exibe dados referente ao PIB total e per capta em dólares, e o anos referentes."
+              mainText="Consulte uma tabela com o PIB total e o PIB per capta em dólares de cada ano."
             />
           </Link>
         </div>

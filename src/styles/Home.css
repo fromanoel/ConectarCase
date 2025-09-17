@@ -9,24 +9,33 @@
 }
 
 .home-headline .home-title {
-  font-size: 25px;
-  font-weight: 600;
-  color: red;
+  font-size: 22px;
+  font-weight: 650;
+  color: #27ae60;
   display: block;
+  max-width: 400px;
+  padding-bottom: 10px;
 }
 
 .home-headline .home-subtitle {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 350;
   margin-left: 8px;
   display: inline;
   color: var(--text);
 }
 
 .home-content {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 50px 0px;
+  padding: 35px 0px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+body[data-theme="dark"] .home-title {
+  color: #e1cb31;
 }
