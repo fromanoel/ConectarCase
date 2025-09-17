@@ -1,6 +1,9 @@
 import "../styles/home.css"
-import HomeSection from "../components/HomeSection.js"
+import HomeCard from "../components/HomeCard.js"
 import RouteNav from "../components/RouteNav.js"
+import imgChart from "../assets/chart.png"
+import imgTable from "../assets/table.png"
+import { Link } from "react-router-dom"
 const Home = () => {
   return (
     <>
@@ -15,16 +18,22 @@ const Home = () => {
             </span>
           </h1>
         </div>
-        <HomeSection
-          mainTitle="Gráfico de evolução do PIB"
-          mainText="Gráfico linear que exibe a evolução do PIB brasileiro e PIB per capta em dólares."
-        />
-      </div>
-      <div className="home-container">
-        <HomeSection
-          mainTitle="Tabela do PIB por ano"
-          mainText="Tabela que exibe dados referente ao PIB total e per capta em dólares, e o anos referentes."
-        />
+        <div className="home-content">
+          <Link to="/chart" className="route-link">
+            <HomeCard
+              bgImage={imgChart}
+              mainTitle="Gráfico de evolução do PIB"
+              mainText="Gráfico linear que exibe a evolução do PIB brasileiro e PIB per capta em dólares."
+            />
+          </Link>
+          <Link to="/table" className="route-link">
+            <HomeCard
+              bgImage={imgTable}
+              mainTitle="Tabela do PIB por ano"
+              mainText="Tabela que exibe dados referente ao PIB total e per capta em dólares, e o anos referentes."
+            />
+          </Link>
+        </div>
       </div>
     </>
   )

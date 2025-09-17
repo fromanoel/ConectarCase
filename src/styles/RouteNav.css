@@ -1,5 +1,5 @@
 .route-nav {
-  background-color: #222;
+  background-color: #253841;
 }
 
 .route-nav > div {
@@ -14,8 +14,7 @@
   background-color: #fff;
 }
 
-.route-link {
-  text-decoration: none;
+.route-nav .route-link {
   transition: all 0.5s;
   color: #253841;
   font-size: 20px;
@@ -25,7 +24,7 @@
   margin-bottom: 10px;
 }
 
-.route-link:hover {
+.route-nav .route-link:hover {
   background-color: #e1cb31;
 }
 
@@ -34,7 +33,7 @@
 }
 
 [data-theme="dark"] .route-nav > div {
-  background-color: #222;
+  background-color: #253841;
 }
 
 body[data-theme="dark"] .route-link {
