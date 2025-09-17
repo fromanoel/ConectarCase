@@ -1,0 +1,29 @@
+.logo {
+  width: 120px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 16px 0;
+}
+
+.theme-btn {
+  position: absolute;
+  right: 24px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-top: 12px;
+}
+
+.theme-icon {
+  color: #222;
+}
+
+[data-theme="dark"] .theme-icon {
+  color: #fff;
+}

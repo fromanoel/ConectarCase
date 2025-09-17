@@ -1,0 +1,23 @@
+.home-container {
+  width: 100%;
+}
+
+.home-headline {
+  margin: 20px 10px 0px 10px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: red;
+  display: block;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 8px;
+  display: inline;
+  color: var(--text);
+}

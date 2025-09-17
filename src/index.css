@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --bg: #fff;
+  --text: #222;
+}
+
+[data-theme="dark"] {
+  --bg: #253841;
+  --text: #eee;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  max-width: 430px;
+}
