@@ -1,0 +1,42 @@
+.route-nav {
+  background-color: #222;
+}
+
+.route-nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 0;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom: none;
+  border-bottom: 1px solid rgb(134, 134, 134);
+  background-color: #fff;
+}
+
+.route-link {
+  text-decoration: none;
+  transition: all 0.5s;
+  color: #253841;
+  font-size: 20px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.route-link:hover {
+  background-color: #e1cb31;
+}
+
+[data-theme="dark"] .route-nav {
+  background-color: #fff;
+}
+
+[data-theme="dark"] .route-nav > div {
+  background-color: #222;
+}
+
+body[data-theme="dark"] .route-link {
+  color: #fff;
+}

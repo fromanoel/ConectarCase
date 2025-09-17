@@ -8,6 +8,7 @@
   justify-content: center;
   position: relative;
   padding: 16px 0;
+  background-color: #222;
 }
 
 .theme-btn {
@@ -21,9 +22,13 @@
 }
 
 .theme-icon {
-  color: #222;
+  color: #fff;
 }
 
 [data-theme="dark"] .theme-icon {
-  color: #fff;
+  color: #222;
+}
+
+[data-theme="dark"] .navbar {
+  background-color: #fff;
 }

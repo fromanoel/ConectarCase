@@ -2,7 +2,7 @@ import logoLight from "../assets/logoLight.svg"
 import logoDark from "../assets/logoDark.svg"
 import { useState, useEffect } from "react"
 import { MdDarkMode, MdLightMode } from "react-icons/md"
-import "../styles/NavBar.css"
+import "../styles/LogoNav.css"
 const NavBar = () => {
   const [isDark, setIsDark] = useState(false)
 
@@ -19,7 +19,7 @@ const NavBar = () => {
     <>
       <nav className="navbar">
         <img
-          src={isDark ? logoDark : logoLight}
+          src={isDark ? logoLight : logoDark}
           alt="Logo PIB"
           className="logo"
         />
