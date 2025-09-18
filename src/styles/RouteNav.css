@@ -40,6 +40,6 @@ body[data-theme="dark"] .route-link {
   color: #fff;
 }
 
-[data-theme="dark"] .route-link:hover {
+[data-theme="dark"] .route-nav .route-link:hover {
   background-color: #27ae60;
 }
