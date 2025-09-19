@@ -10,6 +10,7 @@ import {
 } from "recharts"
 import "../styles/Chart.css"
 import RouteNav from "../components/RouteNav"
+import MainTitle from "../components/MainTitle"
 const data = [
   { year: 2010, pibTotal: 2000, pibPerCapita: 10000 },
   { year: 2011, pibTotal: 2200, pibPerCapita: 11000 },
@@ -32,6 +33,15 @@ const Chart = () => {
   return (
     <>
       <RouteNav />
+      <MainTitle
+        title="Gráfico de evolução do PIB:"
+        subtitle={
+          <>
+            Acompanhe a <strong>evolução histórica</strong> do{" "}
+            <strong>PIB brasileiro</strong> de forma visual e intuitiva.
+          </>
+        }
+      />
       <ResponsiveContainer width="100%" height={700}>
         <LineChart
           data={data}

@@ -4,20 +4,21 @@ import RouteNav from "../components/RouteNav.js"
 import imgChart from "../assets/chart.png"
 import imgTable from "../assets/table.png"
 import { Link } from "react-router-dom"
+import MainTitle from "../components/MainTitle.js"
 const Home = () => {
   return (
     <>
       <RouteNav />
       <div className="home-container">
-        <div className="home-headline">
-          <h1 className="home-title">
-            Transforme dados em conhecimento:
-            <span className="home-subtitle">
+        <MainTitle
+          title="Transfome dados em conhecimento:"
+          subtitle={
+            <>
               visualize a <strong>evolução</strong> do{" "}
               <strong>PIB brasileiro</strong> de forma simples e interativa.
-            </span>
-          </h1>
-        </div>
+            </>
+          }
+        />
         <div className="home-content">
           <Link to="/chart" className="route-link">
             <HomeCard

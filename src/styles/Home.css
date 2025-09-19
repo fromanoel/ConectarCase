@@ -3,37 +3,11 @@
   background: var(--bg);
 }
 
-.home-headline {
-  padding: 10px 10px 0px 10px;
-  text-align: center;
-}
-
-.home-headline .home-title {
-  font-size: 22px;
-  font-weight: 650;
-  color: #27ae60;
-  display: block;
-  max-width: 400px;
-  padding-bottom: 10px;
-}
-
-.home-headline .home-subtitle {
-  font-size: 18px;
-  font-weight: 350;
-  margin-left: 8px;
-  display: inline;
-  color: var(--text);
-}
-
 .home-content {
   display: flex;
   flex-direction: column;
   gap: 50px;
   padding: 35px 0px;
-}
-
-strong {
-  font-weight: 600;
 }
 
 body[data-theme="dark"] .home-title {
