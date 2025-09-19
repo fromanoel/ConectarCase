@@ -1,0 +1,9 @@
+.recharts-wrapper:focus,
+.recharts-surface:focus,
+.recharts-responsive-container:focus,
+.recharts-cartesian-grid:focus,
+.recharts-layer:focus,
+.recharts-line:focus,
+.recharts-tooltip-wrapper:focus {
+  outline: none;
+}
