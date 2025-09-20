@@ -1,0 +1,65 @@
+table {
+  border-collapse: collapse;
+  border: 1px solid #000000;
+  margin: auto;
+  height: 100%;
+  width: 95%;
+}
+
+th {
+  border: 1px solid #000000;
+  padding: 4px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+.pagination {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pagination > p {
+  padding-left: 13px;
+  font-size: 14px;
+}
+
+.pagination > button {
+  margin: 20px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  text-decoration: none;
+  background: none;
+  transition: all 0.2s;
+  color: #2ecc71;
+}
+
+.pagination > button:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  color: #2ecc71;
+}
+
+.table-div {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination > button.active-page {
+  color: #aaa6a6;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+body[data-theme="dark"] .pagination > button {
+  color: #e1cb31;
+}
+
+body[data-theme="dark"] .pagination > button.active-page {
+  color: #aaa6a6;
+}
