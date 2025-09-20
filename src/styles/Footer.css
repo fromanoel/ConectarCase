@@ -2,6 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  min-height: 30px;
   background-color: #27ae60;
 }

@@ -39,7 +39,7 @@ const Chart = () => {
           </>
         }
       />
-      <ResponsiveContainer width="100%" height={700}>
+      <ResponsiveContainer width="100%" height={550}>
         <LineChart
           data={data}
           margin={{ left: 40, right: 20, top: 40, bottom: 0 }}
@@ -58,7 +58,7 @@ const Chart = () => {
               angle: -90,
               position: "insideLeft",
               offset: -20,
-              dy: 350,
+              dy: 290,
               style: { fill: "#504ac7ff", fontWeight: "bold" },
             }}
           />
@@ -72,7 +72,7 @@ const Chart = () => {
               angle: 90,
               position: "insideRight",
               offset: -2,
-              dy: 350,
+              dy: 290,
               style: { fill: "#ce3131ff", fontWeight: "bold" },
             }}
           />
