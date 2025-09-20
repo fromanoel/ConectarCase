@@ -50,3 +50,11 @@ main {
 strong {
   font-weight: 600;
 }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+  width: 100%;
+}

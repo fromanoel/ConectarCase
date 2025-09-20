@@ -1,0 +1,22 @@
+.loader {
+  border: 16px solid #e6d1d1;
+  border-top: 16px solid #27ae60;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+[data-theme="dark"] .loader {
+  border: 16px solid #333131;
+  border-top: 16px solid #e1cb31;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

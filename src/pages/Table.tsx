@@ -4,6 +4,7 @@ import RouteNav from "../components/RouteNav"
 import PIBTable from "../components/PIBTable"
 import Pagination from "../components/Pagination"
 import { fetchPIBData } from "../utils/fetchPIBData"
+import Loader from "../components/Loader"
 
 type PIBData = {
   year: number
@@ -38,8 +39,16 @@ const Table = () => {
           </>
         }
       />
-      <PIBTable data={paginatedData} />
-      <Pagination page={page} totalPages={totalPages} setPage={setPage} />
+      {data.length === 0 ? (
+        <div className="loader-container">
+          <Loader />
+        </div>
+      ) : (
+        <>
+          <PIBTable data={paginatedData} />
+          <Pagination page={page} totalPages={totalPages} setPage={setPage} />
+        </>
+      )}
     </>
   )
 }
