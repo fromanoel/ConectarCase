@@ -1,0 +1,25 @@
+table {
+  border-collapse: collapse;
+  border: 1px solid #000000;
+  margin: auto;
+  height: 100%;
+  width: 95%;
+}
+
+th {
+  border: 1px solid #000000;
+  padding: 4px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+.table-div {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import MainTitle from "../components/MainTitle"
 import RouteNav from "../components/RouteNav"
-import "../styles/Table.css"
+import PIBTable from "../components/PIBTable"
+import Pagination from "../components/Pagination"
 import { fetchPIBData } from "../utils/fetchPIBData"
 
 type PIBData = {
@@ -37,57 +38,8 @@ const Table = () => {
           </>
         }
       />
-      <div className="table-div">
-        <table>
-          <thead>
-            <tr>
-              <th>Ano</th>
-              <th>PIB Total (mi USD)</th>
-              <th>PIB per capita (USD)</th>
-            </tr>
-          </thead>
-          <tbody>
-            {paginatedData.map((row, idx) => (
-              <tr key={idx}>
-                <td>{row.year}</td>
-                <td>
-                  {row.pibTotal !== null
-                    ? "$" +
-                      row.pibTotal.toLocaleString("pt-BR", {
-                        minimumFractionDigits: 2,
-                        maximumFractionDigits: 2,
-                      })
-                    : "N/A"}
-                </td>
-                <td>
-                  {row.pibPerCapita !== null
-                    ? "$" +
-                      row.pibPerCapita.toLocaleString("pt-BR", {
-                        minimumFractionDigits: 2,
-                        maximumFractionDigits: 2,
-                      })
-                    : "N/A"}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <div className="pagination">
-        <p>
-          Página {page} de {totalPages}
-        </p>
-        {Array.from({ length: totalPages }, (_, i) => (
-          <button
-            key={i + 1}
-            onClick={() => setPage(i + 1)}
-            className={page === i + 1 ? "active-page" : ""}
-          >
-            {i + 1}
-          </button>
-        ))}
-      </div>
+      <PIBTable data={paginatedData} />
+      <Pagination page={page} totalPages={totalPages} setPage={setPage} />
     </>
   )
 }
