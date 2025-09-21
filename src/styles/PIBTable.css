@@ -1,25 +1,39 @@
 table {
   border-collapse: collapse;
-  border: 1px solid #000000;
   margin: auto;
-  height: 100%;
-  width: 95%;
+  width: 80%;
+  margin-top: 20px;
 }
 
 th {
   border: 1px solid #000000;
-  padding: 4px;
+  padding: 15px;
 }
 
 td {
   border: 1px solid black;
-  padding: 6px;
+  padding: 7px 15px;
 }
 
 .table-div {
-  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 400px;
+}
+
+@media (max-width: 500px) {
+  table {
+    width: 95%;
+    margin-top: 0px;
+  }
+
+  th {
+    padding: 4px;
+  }
+
+  td {
+    padding: 6px;
+  }
 }

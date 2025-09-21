@@ -5,24 +5,23 @@
 .route-nav > div {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 5px 0;
+  justify-content: left;
+  padding: 15px 0;
+  padding-left: 50px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom: none;
   border-bottom: 1px solid rgb(134, 134, 134);
   background-color: #fff;
-  margin-top: -3px;
 }
 
 .route-nav .route-link {
   transition: all 0.5s;
   color: #253841;
-  font-size: 20px;
-  padding: 10px 40px;
+  font-size: 25px;
+  padding: 10px 50px;
   border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-right: 40px;
 }
 
 .route-nav .route-link:hover {
@@ -43,4 +42,18 @@ body[data-theme="dark"] .route-link {
 
 [data-theme="dark"] .route-nav .route-link:hover {
   background-color: #27ae60;
+}
+
+@media (max-width: 500px) {
+  .route-nav > div {
+    justify-content: space-evenly;
+    padding: 5px 0;
+    padding-left: 0px;
+  }
+
+  .route-nav .route-link {
+    font-size: 20px;
+    margin-right: 0px;
+    padding: 10px 15px;
+  }
 }

@@ -1,16 +1,20 @@
 .pagination {
   text-align: center;
-  margin: 40px 0;
+  padding: 20px 0 0 0;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .pagination > p {
-  padding-left: 13px;
-  font-size: 14px;
+  padding-left: 0px;
+  font-size: 16px;
+  text-align: left;
 }
 
 .pagination > button {
-  margin: 20px 20px;
-  font-size: 20px;
+  margin: 0px 20px 20px 20px;
+  font-size: 30px;
   text-decoration: none;
   text-decoration: none;
   background: none;
@@ -35,4 +39,22 @@ body[data-theme="dark"] .pagination > button {
 
 body[data-theme="dark"] .pagination > button.active-page {
   color: #aaa6a6;
+}
+
+@media (max-width: 500px) {
+  .pagination {
+    text-align: center;
+    margin: 40px 0;
+    width: 95%;
+    margin: auto;
+  }
+
+  .pagination > p {
+    font-size: 14px;
+  }
+
+  .pagination > button {
+    margin: 20px 20px;
+    font-size: 22px;
+  }
 }

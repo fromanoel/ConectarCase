@@ -3,13 +3,21 @@
   background: var(--bg);
 }
 
-.home-content {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding: 35px 0px;
+.home-container .content {
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 0px;
+  gap: 100px;
 }
 
 body[data-theme="dark"] .home-title {
   color: #e1cb31;
+}
+
+@media (max-width: 500px) {
+  .home-container .content {
+    flex-direction: column;
+    gap: 50px;
+    padding: 35px 0px;
+  }
 }

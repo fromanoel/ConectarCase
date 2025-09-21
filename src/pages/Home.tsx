@@ -19,7 +19,7 @@ const Home = () => {
             </>
           }
         />
-        <div className="home-content">
+        <div className="content">
           <Link to="/chart" className="route-link">
             <HomeCard
               bgImage={imgChart}

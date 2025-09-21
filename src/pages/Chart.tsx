@@ -3,7 +3,6 @@ import RouteNav from "../components/RouteNav"
 import MainTitle from "../components/MainTitle"
 import PIBLineChart from "../components/PIBLineChart"
 import { fetchPIBData } from "../utils/fetchPIBData"
-import "../styles/Chart.css"
 import Loader from "../components/Loader"
 type PIBData = {
   year: number
@@ -30,13 +29,16 @@ const Chart = () => {
           </>
         }
       />
-      {data.length === 0 ? (
-        <div className="loader-container">
-          <Loader />
-        </div>
-      ) : (
-        <PIBLineChart data={data} />
-      )}
+      <div className="content">
+        {" "}
+        {data.length === 0 ? (
+          <div className="loader-container">
+            <Loader />
+          </div>
+        ) : (
+          <PIBLineChart data={data} />
+        )}
+      </div>
     </>
   )
 }

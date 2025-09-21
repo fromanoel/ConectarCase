@@ -39,16 +39,18 @@ const Table = () => {
           </>
         }
       />
-      {data.length === 0 ? (
-        <div className="loader-container">
-          <Loader />
-        </div>
-      ) : (
-        <>
-          <PIBTable data={paginatedData} />
-          <Pagination page={page} totalPages={totalPages} setPage={setPage} />
-        </>
-      )}
+      <div className="content">
+        {data.length === 0 ? (
+          <div className="loader-container">
+            <Loader />
+          </div>
+        ) : (
+          <>
+            <PIBTable data={paginatedData} />
+            <Pagination page={page} totalPages={totalPages} setPage={setPage} />
+          </>
+        )}
+      </div>
     </>
   )
 }

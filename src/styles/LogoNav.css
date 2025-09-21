@@ -1,5 +1,5 @@
 .logo {
-  width: 120px;
+  width: 200px;
 }
 
 .navbar {
@@ -7,8 +7,9 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 16px 0;
+  padding: 25px 0;
   background-color: #253841;
+  height: 100%;
 }
 
 .theme-btn {
@@ -18,7 +19,8 @@
   border: none;
   outline: none;
   background: transparent;
-  margin-top: 12px;
+  margin-top: 25px;
+  font-size: 40px;
 }
 
 .theme-icon {
@@ -31,4 +33,19 @@
 
 [data-theme="dark"] .navbar {
   background-color: #fff;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 120px;
+  }
+
+  .navbar {
+    padding: 16px 0;
+  }
+
+  .theme-btn {
+    margin-top: 12px;
+    font-size: 24px;
+  }
 }

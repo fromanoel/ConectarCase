@@ -1,26 +1,46 @@
 .home-headline {
   padding: 10px 10px 0px 10px;
   text-align: center;
-  margin: 10px 0px;
+  margin: 0px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-headline .home-title {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 650;
   color: #27ae60;
   display: block;
-  max-width: 400px;
+  max-width: 800px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .home-headline .home-subtitle {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 350;
-  margin-left: 8px;
+  margin-left: 20px;
   display: inline;
   color: var(--text);
 }
 
 body[data-theme="dark"] .home-title {
   color: #e1cb31;
+}
+
+@media (max-width: 500px) {
+  .home-headline {
+    margin: 20px 0px 10px 0px;
+  }
+
+  .home-headline .home-title {
+    font-size: 22px;
+    max-width: 400px;
+  }
+
+  .home-headline .home-subtitle {
+    font-size: 18px;
+    margin-left: 4px;
+  }
 }
