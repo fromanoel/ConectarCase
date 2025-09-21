@@ -13,6 +13,6 @@ export async function fetchCurrentDollar(): Promise<number> {
       "Erro ao buscar cotação do dólar, usando valor padrão 5.30:",
       error,
     )
-    return 5.3
+    return 5.42
   }
 }

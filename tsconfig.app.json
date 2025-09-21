@@ -23,7 +23,9 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "noEmitOnError": true,
-    "removeComments": true
+    "removeComments": true,
+
+    "types": ["vitest"]
   },
   "include": ["src"]
 }
