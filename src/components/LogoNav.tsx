@@ -22,7 +22,7 @@ const NavBar = () => {
         <Link to="/">
           <img
             src={isDark ? logoLight : logoDark}
-            alt="Logo PIB"
+            alt="Logo do site PIBTrends"
             className="logo"
           />
         </Link>
