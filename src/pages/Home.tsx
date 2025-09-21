@@ -1,4 +1,4 @@
-import "../styles/home.css"
+import "../styles/Home.css"
 import HomeCard from "../components/HomeCard.js"
 import RouteNav from "../components/RouteNav.js"
 import imgChart from "../assets/chart.png"
